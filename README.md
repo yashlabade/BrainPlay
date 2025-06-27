@@ -409,6 +409,8 @@ Perfect for:
 
 **Happy Coding! 🎉**
 
-*Remember: The goal isn't just to build a game, but to master Python through practical, real-world application of advanced concepts with proper session management and data persistence.*#   B r a i n P l a y  
- #   B r a i n P l a y  
+*Remember: The goal isn't just to build a game, but to master Python through practical, real-world application of advanced concepts with proper session management and data persistence.*#   B r a i n P l a y 
+ 
+ #   B r a i n P l a y 
+ 
  
