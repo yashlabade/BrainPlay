@@ -1,62 +1,62 @@
 # 🧠 BrainPlay: Win or Lose v2.0
 
-A comprehensive Command-Line Interactive Python Game with **Session Management** and **Player Tracking** that demonstrates **advanced Python concepts** and **best practices** for real-world software development.
+A comprehensive Command-Line Interactive Python Game with *Session Management* and *Player Tracking* that demonstrates *advanced Python concepts* and *best practices* for real-world software development.
 
 ## 🎯 Game Overview
 
-**BrainPlay** challenges players with two types of mathematical questions:
-1. **Square Calculation**: Calculate the square of a number (e.g., "What is 7²?" Answer: 49)
-2. **Square Root**: Find the square root of perfect squares (e.g., "What is √144?" Answer: 12)
+*BrainPlay* challenges players with two types of mathematical questions:
+1. *Square Calculation*: Calculate the square of a number (e.g., "What is 7²?" Answer: 49)
+2. *Square Root*: Find the square root of perfect squares (e.g., "What is √144?" Answer: 12)
 
 ### 🎮 Game Rules
-- ✅ **+10 points** for correct answers
-- ❌ **-5 points** for wrong answers  
-- 🏆 **WIN** when you reach 50+ points
-- 👋 **LOSE** if you quit before winning
+- ✅ *+10 points* for correct answers
+- ❌ *-5 points* for wrong answers  
+- 🏆 *WIN* when you reach 50+ points
+- 👋 *LOSE* if you quit before winning
 
 ### 🆕 New Features in v2.0
-- 👤 **Player Profiles** with persistent statistics
-- 🎮 **Session Management** with unique session IDs
-- 📊 **Comprehensive Logging** of all game events
-- 📈 **Enhanced Statistics** and achievement tracking
-- 💾 **Session Data Persistence** across game restarts
+- 👤 *Player Profiles* with persistent statistics
+- 🎮 *Session Management* with unique session IDs
+- 📊 *Comprehensive Logging* of all game events
+- 📈 *Enhanced Statistics* and achievement tracking
+- 💾 *Session Data Persistence* across game restarts
 
 ---
 
 ## 🚀 Quick Start for Windows
 
 ### Prerequisites
-- **Python 3.8+** (recommended: Python 3.9+)
-- **pip** package manager
+- *Python 3.8+* (recommended: Python 3.9+)
+- *pip* package manager
 
 ### Installation Steps
 
-1. **Create project directory**:
-   ```cmd
+1. *Create project directory*:
+   cmd
    mkdir brainplay-game
    cd brainplay-game
-   ```
+   
 
-2. **Copy all the game files** to this directory
+2. *Copy all the game files* to this directory
 
-3. **Create virtual environment**:
-   ```cmd
+3. *Create virtual environment*:
+   cmd
    python -m venv venv
    venv\Scripts\activate
-   ```
+   
 
-4. **Install dependencies**:
-   ```cmd
+4. *Install dependencies*:
+   cmd
    pip install -r requirements.txt
-   ```
+   
 
-5. **Run the game**:
-   ```cmd
+5. *Run the game*:
+   cmd
    python main.py
-   ```
+   
 
 ### CLI Options
-```cmd
+cmd
 # Basic gameplay
 python main.py                           # Normal mode
 python main.py --mode easy               # Easy difficulty
@@ -72,20 +72,20 @@ python main.py --stats                   # Show player statistics
 # Help and version
 python main.py --help                    # Show all options
 python main.py --version                 # Show version
-```
+
 
 ---
 
-## 🏗️ Enhanced Project Structure
+## 🏗 Enhanced Project Structure
 
-```
+
 brainplay-game/
 ├── main.py                 # 🎯 Entry point & game loop with session management
 ├── questions.py            # 🏭 Question factory & generators (FIXED)
 ├── score.py               # 📊 Score management (Singleton)
 ├── session.py             # 👤 Session & player management (NEW)
-├── exceptions.py          # ⚠️ Custom exception hierarchy
-├── utils/                 # 🛠️ Utility modules
+├── exceptions.py          # ⚠ Custom exception hierarchy
+├── utils/                 # 🛠 Utility modules
 │   ├── __init__.py
 │   ├── decorators.py      # 🎨 Decorators & closures
 │   ├── context.py         # 📋 Context managers
@@ -98,102 +98,102 @@ brainplay-game/
 │   └── game_history.json  # 📊 Game data
 ├── requirements.txt       # 📦 Dependencies
 └── README.md             # 📖 This file
-```
+
 
 ---
 
 ## 🎮 Game Features
 
-### ✅ **Correct Question Types**
-1. **Square Calculation**: "What is X²?" (e.g., "What is 7²?")
+### ✅ *Correct Question Types*
+1. *Square Calculation*: "What is X²?" (e.g., "What is 7²?")
    - Player calculates the square of a given number
    - Answer: X × X (e.g., 7² = 49)
    - Difficulty affects the range of base numbers
 
-2. **Square Root**: "What is √X?" (e.g., "What is √144?")
+2. *Square Root*: "What is √X?" (e.g., "What is √144?")
    - Player calculates the square root of perfect squares
    - Answer: The number that when squared gives X (e.g., √144 = 12)
    - Difficulty affects the range of perfect squares
 
-### 🆕 **Session Management**
-- **Unique Session IDs** for each game
-- **Player Profiles** with persistent statistics
-- **Session Duration** tracking
-- **Comprehensive Logging** of all events
+### 🆕 *Session Management*
+- *Unique Session IDs* for each game
+- *Player Profiles* with persistent statistics
+- *Session Duration* tracking
+- *Comprehensive Logging* of all events
 
-### 📊 **Enhanced Statistics**
-- **Player Stats**: Total games, wins, best score, win rate
-- **Session Data**: Duration, rounds played, accuracy
-- **Achievement System**: Unlockable badges and milestones
-- **Historical Data**: Complete game history with session details
+### 📊 *Enhanced Statistics*
+- *Player Stats*: Total games, wins, best score, win rate
+- *Session Data*: Duration, rounds played, accuracy
+- *Achievement System*: Unlockable badges and milestones
+- *Historical Data*: Complete game history with session details
 
 ---
 
 ## 🧠 Advanced Python Concepts Demonstrated
 
-### 1. **Session Management & Data Persistence**
+### 1. *Session Management & Data Persistence*
 - ✅ Player profile management with dataclasses
 - ✅ Session tracking with unique IDs
 - ✅ Persistent data storage across game sessions
 - ✅ JSON serialization/deserialization
 
-### 2. **Enhanced Logging & Monitoring**
+### 2. *Enhanced Logging & Monitoring*
 - ✅ Comprehensive logging with multiple levels
 - ✅ Session-aware log messages
 - ✅ Performance monitoring and timing
 - ✅ Error tracking and debugging
 
-### 3. **Object-Oriented Programming**
+### 3. *Object-Oriented Programming*
 - ✅ Classes, inheritance, polymorphism
-- ✅ Abstract base classes (`ABC`)
-- ✅ Data classes (`@dataclass`)
+- ✅ Abstract base classes (ABC)
+- ✅ Data classes (@dataclass)
 - ✅ Properties and descriptors
 
-### 4. **Design Patterns**
-- ✅ **Singleton Pattern** (ScoreManager)
-- ✅ **Factory Pattern** (QuestionFactory)
-- ✅ **Template Method** (QuestionGenerator)
+### 4. *Design Patterns*
+- ✅ *Singleton Pattern* (ScoreManager)
+- ✅ *Factory Pattern* (QuestionFactory)
+- ✅ *Template Method* (QuestionGenerator)
 
-### 5. **Functional Programming**
+### 5. *Functional Programming*
 - ✅ Lambda functions
-- ✅ `map()`, `filter()`, `reduce()`
+- ✅ map(), filter(), reduce()
 - ✅ List/dict/set comprehensions
 - ✅ Generator functions and expressions
 
-### 6. **Async Programming**
-- ✅ `async`/`await` syntax
-- ✅ `asyncio` event loop
-- ✅ Async file I/O with `aiofiles`
-- ✅ Async HTTP requests with `aiohttp`
+### 6. *Async Programming*
+- ✅ async/await syntax
+- ✅ asyncio event loop
+- ✅ Async file I/O with aiofiles
+- ✅ Async HTTP requests with aiohttp
 
-### 7. **Error Handling**
+### 7. *Error Handling*
 - ✅ Custom exception hierarchy
-- ✅ `try`/`except`/`else`/`finally`
+- ✅ try/except/else/finally
 - ✅ Exception chaining
 - ✅ Context managers for cleanup
 
-### 8. **Decorators & Closures**
+### 8. *Decorators & Closures*
 - ✅ Function decorators
 - ✅ Class decorators  
 - ✅ Parameterized decorators
-- ✅ `functools.wraps`
+- ✅ functools.wraps
 
-### 9. **Context Managers**
-- ✅ `with` statement
-- ✅ `@contextmanager` decorator
+### 9. *Context Managers*
+- ✅ with statement
+- ✅ @contextmanager decorator
 - ✅ Custom context managers
 - ✅ Resource management
 
-### 10. **Type Hints**
+### 10. *Type Hints*
 - ✅ Static type annotations
-- ✅ `typing` module usage
+- ✅ typing module usage
 - ✅ Generic types
 
 ---
 
 ## 📝 Sample Game Session
 
-```cmd
+cmd
 (venv) D:\brainplay-game> python main.py --player "Alice"
 
 👤 Enter your name (or press Enter for 'Anonymous'): Alice
@@ -253,7 +253,7 @@ Total Games: 6
 Total Wins: 4
 Best Score: 50
 Win Rate: 66.7%
-```
+
 
 ---
 
@@ -261,41 +261,41 @@ Win Rate: 66.7%
 
 ### Common Windows Issues
 
-**1. Python not found**
-```cmd
+*1. Python not found*
+cmd
 # Try python instead of python3
 python main.py
-```
 
-**2. Virtual environment activation**
-```cmd
+
+*2. Virtual environment activation*
+cmd
 # Make sure you're using Windows syntax
 venv\Scripts\activate
-```
 
-**3. Module not found errors**
-```cmd
+
+*3. Module not found errors*
+cmd
 # Ensure virtual environment is activated
 venv\Scripts\activate
 
 # Reinstall dependencies
 pip install -r requirements.txt
-```
 
-**4. Permission denied**
-```cmd
+
+*4. Permission denied*
+cmd
 # Run Command Prompt as Administrator
 # Or use:
 python -m pip install --user -r requirements.txt
-```
+
 
 ---
 
 ## 📊 Data Files Explained
 
-### `data/players.json`
+### data/players.json
 Stores player profiles with statistics:
-```json
+json
 {
   "player_id": {
     "name": "Alice",
@@ -306,11 +306,11 @@ Stores player profiles with statistics:
     "last_played": "2025-01-02T15:30:00"
   }
 }
-```
 
-### `data/sessions.json`
+
+### data/sessions.json
 Stores session history:
-```json
+json
 [
   {
     "session_id": "abc123...",
@@ -322,11 +322,11 @@ Stores session history:
     "mode": "normal"
   }
 ]
-```
 
-### `data/game_history.json`
+
+### data/game_history.json
 Stores detailed game data with rounds:
-```json
+json
 [
   {
     "session_id": "abc123...",
@@ -348,29 +348,29 @@ Stores detailed game data with rounds:
     ]
   }
 ]
-```
+
 
 ---
 
 ## 🎓 Learning Path & Extensions
 
 ### 🔰 Beginner Extensions
-1. **Add new question types** (e.g., cube calculations, basic arithmetic)
-2. **Implement difficulty scaling** (adaptive difficulty based on performance)
-3. **Add more achievements** (streaks, speed bonuses, etc.)
-4. **Create player leaderboards**
+1. *Add new question types* (e.g., cube calculations, basic arithmetic)
+2. *Implement difficulty scaling* (adaptive difficulty based on performance)
+3. *Add more achievements* (streaks, speed bonuses, etc.)
+4. *Create player leaderboards*
 
 ### 🔥 Intermediate Extensions  
-1. **Database integration** with SQLite or PostgreSQL
-2. **Web interface** using Flask or FastAPI
-3. **Multiplayer support** with WebSockets
-4. **Machine learning** for question difficulty optimization
+1. *Database integration* with SQLite or PostgreSQL
+2. *Web interface* using Flask or FastAPI
+3. *Multiplayer support* with WebSockets
+4. *Machine learning* for question difficulty optimization
 
 ### 🚀 Advanced Extensions
-1. **Microservices architecture** with Docker
-2. **Cloud deployment** (AWS, GCP, Azure)
-3. **Real-time analytics** with Redis/Elasticsearch
-4. **Mobile app** with Kivy or React Native bridge
+1. *Microservices architecture* with Docker
+2. *Cloud deployment* (AWS, GCP, Azure)
+3. *Real-time analytics* with Redis/Elasticsearch
+4. *Mobile app* with Kivy or React Native bridge
 
 ---
 
@@ -378,39 +378,35 @@ Stores detailed game data with rounds:
 
 This project demonstrates:
 
-- **Production-ready code structure**
-- **Industry best practices**
-- **Advanced Python features**
-- **Real-world design patterns**
-- **Professional error handling**
-- **Session management**
-- **Data persistence**
-- **Comprehensive logging**
+- *Production-ready code structure*
+- *Industry best practices*
+- *Advanced Python features*
+- *Real-world design patterns*
+- *Professional error handling*
+- *Session management*
+- *Data persistence*
+- *Comprehensive logging*
 
 Perfect for:
-- 🎓 **Computer Science students**
-- 👨‍💻 **Junior developers** learning Python
-- 🏢 **Bootcamp participants**
-- 📖 **Self-taught programmers**
-- 🧑‍🏫 **Instructors** teaching advanced Python
+- 🎓 *Computer Science students*
+- 👨‍💻 *Junior developers* learning Python
+- 🏢 *Bootcamp participants*
+- 📖 *Self-taught programmers*
+- 🧑‍🏫 *Instructors* teaching advanced Python
 
 ---
 
 ## 🎉 Getting Started
 
-1. **Copy all files** to your project directory
-2. **Follow the installation steps** above
-3. **Run** `python main.py` to start playing
-4. **Create your player profile** and start earning achievements
-5. **Explore the code** to learn advanced Python concepts
-6. **Check the logs** in `data/game.log` to see detailed session tracking
+1. *Copy all files* to your project directory
+2. *Follow the installation steps* above
+3. *Run* python main.py to start playing
+4. *Create your player profile* and start earning achievements
+5. *Explore the code* to learn advanced Python concepts
+6. *Check the logs* in data/game.log to see detailed session tracking
 
 ---
 
-**Happy Coding! 🎉**
+*Happy Coding! 🎉*
 
-*Remember: The goal isn't just to build a game, but to master Python through practical, real-world application of advanced concepts with proper session management and data persistence.*#   B r a i n P l a y 
- 
- #   B r a i n P l a y 
- 
- 
+Remember: The goal isn't just to build a game, but to master Python through practical, real-world application of advanced concepts with proper session management and data persistence.#
