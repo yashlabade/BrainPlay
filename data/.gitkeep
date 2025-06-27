@@ -1,0 +1,4 @@
+"""
+This file ensures the data directory is created in version control.
+The data directory will store game files, logs, user data, and session information.
+"""
